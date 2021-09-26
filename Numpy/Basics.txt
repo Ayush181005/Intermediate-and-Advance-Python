@@ -1,0 +1,7 @@
+pip install numpy
+pip install jupyter
+
+1. Write 'jupyter notebook' in powershell window in a folder to start jupyter notebook
+2. Select on 'New/Python 3'
+3. There, there are cells
+4. In Markdown, **Bold**, *Italic*, ***Bold and Italic***, #Heading

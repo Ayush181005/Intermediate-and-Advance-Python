@@ -1,0 +1,37 @@
+- Open Powershell window here
+- pip install virtualenv
+- virtualenv nameOfEnv
+
+  To make a venv which has system's python site packages,
+  'virtualenv --system-site-packages nameOfEnv
+
+for installing packages to virtual environment, first we need to activate it in the command line
+
+- source nameOfEnv/bin/activate [For linux based systems]
+  
+  'nameOfEnv\scripts\activate'    [For Windows] =======> Note: To run this, open the command prompt or powershell window through admin
+				  
+  There can be error so write:-
+
+  'set-executionpolicy remotesigned'		the write 'Y' when asked
+
+  then try activating script and it will be activated
+
+- now, you can install any packages in the venv for eg.:-
+  pip install sklearn
+- 'deactivate' to deactivate the venv
+
+
+
+By this you can use venv for command line programs just by writing 'python'
+OR you can run a python file by for eg. writing 'python main.py'
+
+
+If we need to send the virtual environment to someone and it has many packages installed, it is a bad method to copy and past and give the folder,
+we will make a requirements.txt file:-
+'pip freeze > requirements.txt' ====> Write this when venv is activated and you are in the right directory in command line
+This file will have the list of all the installed packages in the python
+
+
+- To delete the virtual environment, 'del nameOfEnv'
+- To install packages from requirements.txt, 'pip install -r -\requirements.txt'
